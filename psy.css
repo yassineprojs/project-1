@@ -1,0 +1,463 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+*,
+*:before,
+*:after {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.psy-container {
+  color: #264e70;
+
+  padding: 3rem 11.5rem 3rem 11.5rem;
+  -webkit-clip-path: ellipse(90% 48% at 50% 34%);
+  clip-path: ellipse(90% 48% at 50% 34%);
+  background-color: #f1dddd;
+}
+
+.psy-row {
+  padding-bottom: 9rem;
+}
+.psy-col1 {
+  padding: 6rem 0 0 0;
+}
+.above-psy {
+  margin-bottom: 15px;
+  font-family: sans-serif;
+  color: #d46953;
+  font-size: 2.2rem;
+  line-height: 26px;
+  word-spacing: 2.5px;
+  letter-spacing: 1px;
+}
+
+.psy-head {
+  max-width: 57.3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: #00585f;
+  font-size: 5.5rem;
+  font-weight: 700;
+  line-height: 5.7rem;
+}
+
+.under-psy {
+  color: #175c62;
+  margin-top: 1.5rem;
+  /* color: #175c62; */
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.psy-btn {
+  margin-top: 4rem;
+}
+
+.psy-btn-link:link,
+.psy-btn-link:visited {
+  background-color: #00585f;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.8rem;
+  padding: 1.2rem 5rem;
+  display: inline-block;
+  color: #fff;
+  border-radius: 35px;
+  margin-right: 1.8rem;
+  transition: all 0.3s;
+}
+
+.psy-btn-link:hover,
+.psy-btn-link:active {
+  background-color: rgb(1, 73, 78);
+}
+
+.psy-main-img {
+  padding: 4rem 0 4rem;
+  width: 40rem;
+}
+
+.desc-img {
+  width: 30rem;
+  border-radius: 50%;
+  filter: saturate(118%);
+}
+
+.psy-desc-container {
+  padding: 0rem 12rem 3rem;
+  position: relative;
+}
+
+.video-img {
+  position: absolute;
+  width: 8rem;
+  left: 35rem;
+  top: 19.5rem;
+  z-index: 4;
+}
+
+.psy-desc-header {
+  max-width: 57.3rem;
+
+  color: #00585f;
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 5.7rem;
+}
+
+.work-container {
+  background-color: #e1f0ee;
+  padding: 8rem 28rem 8rem 20rem;
+  position: relative;
+}
+
+.works-heading {
+  margin-bottom: 7rem;
+  color: #00585f;
+  font-weight: 600;
+  font-size: 55px;
+}
+
+.work-para-head {
+  font-size: 2.4rem;
+  color: #00585f;
+  font-weight: 700;
+}
+
+.work-img {
+  width: 56rem;
+  position: absolute;
+  right: 0;
+  top: -2rem;
+  filter: saturate(140%);
+}
+
+.mask-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: 509px;
+  height: 343px;
+}
+
+.hide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.work-row {
+  position: relative;
+  z-index: 1;
+}
+
+.work-btn {
+  margin-top: 2rem;
+}
+
+.work-btn-link:link,
+.work-btn-link:visited {
+  background-color: #00585f;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.8rem;
+  padding: 1.2rem 5rem;
+  display: inline-block;
+  color: #fff;
+  border-radius: 35px;
+  margin-right: 1.8rem;
+  transition: all 0.3s;
+}
+
+.work-btn-link:hover,
+.work-btn-link:active {
+  background-color: rgb(1, 73, 78);
+}
+.under-work {
+  color: #175c62;
+  margin-top: 1.5rem;
+  /* color: #175c62; */
+  font-size: 1.7rem;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.above-work {
+  margin-bottom: 15px;
+  font-family: sans-serif;
+  color: #d46953;
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 26px;
+  word-spacing: 2.5px;
+  letter-spacing: 1px;
+}
+
+/******** ill ********/
+/* --------- Card Animation ---------- */
+.ill {
+  margin: 14rem 0;
+}
+.card-ill:not(:empty):hover,
+.card-ill:not(:empty):focus {
+  z-index: 1;
+  color: #fff;
+  background: #d46953;
+  opacity: 1;
+  transform: scale(1.15) rotateZ(20deg);
+  cursor: pointer;
+}
+.card-ill:not(:empty):hover:after,
+.card-ill:not(:empty):focus:after {
+  opacity: 1;
+}
+.card-ill:not(:empty):hover:before,
+.card-ill:not(:empty):focus:before {
+  opacity: 0;
+}
+
+.card-ill {
+  padding: 3.2rem;
+  background: #fab0b0;
+  border-radius: 0.7em;
+  opacity: 0.6;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  transition: all 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+  transition-property: background, transform, color, opacity;
+}
+.card-ill:not(:empty):before {
+  box-shadow: -2px 2px 8px 2px rgba(0, 0, 0, 0.2);
+}
+.card-ill:empty {
+  opacity: 0.3;
+}
+.card-ill:before,
+.card-ill:after {
+  content: "";
+  position: absolute;
+  border-radius: 0.7em;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.card-ill:after {
+  box-shadow: -20px 20px 12px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+
+/* --------- Grid ---------- */
+.grid-ill {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.item2 {
+  grid-area: 3/3/4/4;
+}
+.item2.card-ill:hover,
+.item2.card-ill:focus {
+  background: #d46953;
+}
+
+.item3 {
+  grid-area: 4/1/5/4;
+}
+
+.item4 {
+  grid-area: 1/3/2/5;
+}
+
+.item5 {
+  grid-area: 2/4/3/5;
+}
+
+.item6 {
+  grid-area: 3/4/4/5;
+}
+
+.item7 {
+  grid-area: 3/4/5/5;
+}
+
+.item8 {
+  grid-area: 1/5/2/6;
+}
+.item8.card-ill:hover,
+.item8.card-ill:focus {
+  background: #d46953;
+}
+
+.item9 {
+  grid-area: 2/5/3/6;
+}
+
+.item10 {
+  grid-area: 3/5/4/6;
+}
+
+.item11 {
+  grid-area: 4/5/5/6;
+}
+.item11.card-ill:hover,
+.item11.card-ill:focus {
+  background: #d46953;
+}
+
+*,
+*:before,
+*:after {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.ill {
+  font-family: "Quicksand", sans-serif;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --------- Responsive ---------- */
+@media only screen and (max-width: 600px) {
+  .grid-ill {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, minmax(auto, 300px));
+    overflow-y: scroll;
+  }
+
+  .card-ill {
+    grid-area: auto;
+    text-align: left;
+  }
+  .card-ill:empty {
+    display: none;
+  }
+}
+
+.ill-img-div {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  overflow: hidden;
+  width: 292px;
+  height: 532px;
+}
+
+.ill-img {
+  left: -80px;
+  top: -40px;
+  position: absolute;
+  height: 130%;
+  max-width: none;
+  filter: saturate(140%);
+}
+
+.mask3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.ill-desc {
+  position: absolute;
+  z-index: 2000;
+  top: 16rem;
+  left: 50rem;
+  width: 30rem;
+}
+
+.ill-head {
+  font-size: 3rem;
+  color: #00585f;
+  font-weight: 700;
+}
+
+.ill-sous-desc {
+  color: #175c62;
+
+  font-size: 1.7rem;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.ill-pseudo {
+  color: #0f3e42;
+  font-weight: 600;
+}
+
+.footer-ill {
+  top: 15rem;
+}
+
+/********* accordion  **********/
+
+.accordion-main-head {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.above-accord {
+  font-family: sans-serif;
+  color: #d46953;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.accordion .card-header .btn {
+  color: #014044;
+
+  font-size: 2.4rem;
+  text-align: left;
+  position: relative;
+  font-weight: 500;
+  padding-left: 3.5rem;
+}
+.accordion .card-header i {
+  color: #d46953;
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 1.2rem;
+}
+.accordion .card-header .btn:hover {
+  color: #d46953;
+}
+.accordion .card-body {
+  color: #175c62;
+  font-size: 1.7rem;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 3rem 3rem;
+}
+.page-title {
+  color: #00585f;
+  font-size: 4.5rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.accordion .highlight i {
+  transform: rotate(180deg);
+}
